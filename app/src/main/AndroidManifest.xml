@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.material.components">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27"  />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Add Google Map Library -->
+        <uses-library android:name="com.google.android.maps" />
+        <!-- Google API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.witways.mylearn.material.activity.MainMenu"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.witways.mylearn.material.activity.bottomnavigation.BottomNavigationBasic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.bottomnavigation.BottomNavigationShifting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.bottomsheet.BottomSheetBasic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.bottomsheet.BottomSheetList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.button.ButtonBasic"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.card.CardBasic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.chip.ChipBasic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.dialog.DialogBasic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.expansionpanel.ExpansionPanelBasic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.gridlist.GridBasic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.list.ListBasic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.picker.PickerTimeDark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.progressactivity.ProgressBasic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.slider.SliderLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.slider.SliderDark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.snackbartoast.SnackbarToastBasic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.stepper.StepperText"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.tabs.TabsBasic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.form.FormLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.toolbar.ToolbarBasic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.button.FabMiddle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.button.ButtonInUtilities"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.card.CardTimeline"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.dialog.DialogFullscreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.dialog.DialogCustom"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.expansionpanel.ExpansionPanelTicket"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.expansionpanel.ExpansionPanelInvoice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.gridlist.GridSingleLine"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.gridlist.GridSectioned"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.list.ListSectioned"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.list.ListExpand"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.list.ListDrag"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.list.ListSwipe"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.list.ListAnimation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.menu.MenuDrawerNews"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.menu.MenuDrawerMail"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.menu.MenuDrawerSimpleLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.menu.MenuDrawerSimpleDark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.menu.MenuDrawerNoIcon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.picker.PickerDateLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.picker.PickerDateDark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.picker.PickerTimeLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.progressactivity.ProgressPullRefresh"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.progressactivity.ProgressOnScroll"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.progressactivity.ProgressLinearCenter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.slider.SliderColorPicker"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.snackbartoast.SnackbarAndFab"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.stepper.StepperVertical"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.stepper.StepperProgress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.stepper.StepperWizardLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.tabs.TabsIcon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.tabs.TabsTextIcon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.tabs.TabsLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.tabs.TabsStore"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.toolbar.ToolbarCollapse"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.toolbar.ToolbarCollapsePin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.form.FormProfileData"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.form.FormWithIcon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.tabs.TabsIconLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.tabs.TabsIconStack"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.stepper.StepperDots"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.stepper.StepperWizardColor"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.progressactivity.ProgressCircleCenter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.progressactivity.ProgressLinearTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.picker.PickerColor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.picker.PickerLocation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.menu.MenuOverflowToolbar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.menu.MenuOverflowList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.list.ListMultiSelection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.gridlist.GridTwoLine"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.gridlist.GridAlbums"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.dialog.DialogCustomInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.dialog.DialogCustomWarning"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.dialog.DialogCustomLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.dialog.DialogAddPost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.dialog.DialogCustomDark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.dialog.DialogAddReview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.chip.ChipTag"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.card.CardOverlap"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.card.CardWizard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.card.CardWizardLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.button.FabMore"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.button.FabMoreText"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.bottomsheet.BottomSheetMap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.bottomsheet.BottomSheetFloating"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.bottomsheet.BottomSheetFull"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.bottomnavigation.BottomNavigationLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.toolbar.ToolbarLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.toolbar.ToolbarDark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.form.FormTextArea"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.tabs.TabsScroll"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.tabs.TabsDark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.form.FormSignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.gridlist.GridCaller"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.bottomnavigation.BottomNavigationDark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.bottomnavigation.BottomNavigationIcon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.card.CardWizardOverlap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.profile.ProfilePolygon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.profile.ProfilePurple"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.profile.ProfileRed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.profile.ProfileBlueAppbar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.profile.ProfileImageAppbar"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.profile.ProfileDrawerImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.profile.ProfileGallery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.profile.ProfileGalleryTwo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.profile.ProfileDrawerSimple"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.noitem.NoItemArchived"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.noitem.NoItemSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.noitem.NoItemInternetIcon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.noitem.NoItemInternetImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.noitem.NoItemBgCity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.noitem.NoItemBgCactus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.noitem.NoItemTabs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.search.SearchToolbarLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.search.SearchToolbarDark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.search.SearchPrimary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.search.SearchStore"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.search.SearchCity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.search.SearchPrimaryBg"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.search.SearchHistoryCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.shopping.ShoppingCategoryList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.tabs.TabsRound"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.shopping.ShoppingCategoryCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.shopping.ShoppingCategoryImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.shopping.ShoppingCheckoutCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.shopping.ShoppingProductGrid"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.shopping.ShoppingProductDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.shopping.ShoppingSubCategoryTabs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.shopping.ShoppingProductAdvDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.sliderimage.SliderImageHeader"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.sliderimage.SliderImageHeaderAuto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.sliderimage.SliderImageCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.sliderimage.SliderImageCardAuto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.player.PlayerMusicBasic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.player.PlayerMusicLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.player.PlayerMusicAlbumDark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.player.PlayerMusicAlbumCircle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.player.PlayerMusicAlbumSimple"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.player.PlayerMusicSongList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.player.PlayerMusicTabs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.player.PlayerMusicTabsIcon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.player.PlayerMusicAlbumGrid"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.timeline.TimelineFeed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.timeline.TimelinePath"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.timeline.TimelineTwitter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.timeline.TimelineSimple"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.timeline.TimelineDotCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.settings.SettingProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.settings.SettingSectioned"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.settings.SettingFlat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.settings.SettingProfileLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.verification.VerificationPhone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.verification.VerificationCode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.verification.VerificationHeader"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.verification.VerificationImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.verification.VerificationOrange"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.verification.VerificationBlue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.login.LoginSimpleLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.login.LoginSimpleGreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.login.LoginImageTeal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.login.LoginCardLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.login.LoginCardOverlap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.login.LoginSimpleDark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.payment.PaymentProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.payment.PaymentForm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.payment.PaymentCardCollections"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.payment.PaymentCardDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.payment.PaymentSuccessDialog"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.progressactivity.ProgressDotsBounce"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.progressactivity.ProgressDotsFade"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.progressactivity.ProgressDotsGrow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.profile.ProfileFabMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.profile.ProfileCardList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.bottomnavigation.BottomNavigationPrimary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.bottomnavigation.BottomNavigationMapBlue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.dashboard.DashboardGridFab"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.dashboard.DashboardStatistics"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.player.PlayerMusicGenre"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.player.PlayerMusicGenreImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.player.PlayerMusicGenreLight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.dashboard.DashboardPayBill"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.dashboard.DashboardFlight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.button.CustomScanActivity"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.witways.mylearn.material.activity.whs.TestOne"
+            android:label="@string/title_activity_test_one"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

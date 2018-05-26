@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">我的APP</string>
+
+    <string name="navigation_drawer_open">打开导航</string>
+    <string name="navigation_drawer_close">关闭导航</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyCbNPy5hqDEQXXXXXXXXXXXXXXXXXXXX
+    </string>
+
+    <string name="step_of">第 %1$d / %2$d 步</string>
+    <string name="section_format">Section : %1$d</string>
+
+    <string name="about_text">关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们
+    </string>
+    <string name="title_activity_test_one">TestOne</string>
+
+</resources>
